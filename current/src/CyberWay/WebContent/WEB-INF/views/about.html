@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorator="frame">
+<head>
+    <title>About CyberWay</title>
+</head>
+	<body>
+		<div class="clearfix" layout:fragment="content">
+		
+		    <div class="sec-heading font-default">
+		    
+		        <div class="container">
+		    
+		            <h1>Introduction of CyberWay</h1>
+		    
+		        </div>
+		    
+		    </div>
+			
+		    <section class="container font-default">
+		    	
+		        <div class="panel panel-default">
+						
+					<h3>Project Description</h3>
+						
+		            <ul>
+		            	
+		            	<li>This project will build a production system of systems integrating EarthCube building blocks,
+particularly BCube, CyberConnector, CHORDS, and GeoWS, to advance geosciences research through
+improved interoperability and integration across diverse polar science and atmospheric science research,
+methods, and resources. </li>
+
+						<li>Named CyberWay, the system is built through connecting Earth observations,
+polar science outcomes, and climate model outcomes via the EarthCube architecture. The system itself
+will also become an element of the EarthCube infrastructure.</li>
+		                
+		            </ul>
+		            
+		            <h3>Science	Use	Case</h3>
+		            
+		            <p>The scientific driver is to advance multidisciplinary science research, specifically climate science and
+polar science, by integrating capabilities of EarthCube building blocks. The following are the five active
+NSF GEO science projects to be supported by CyberWay.</p>
+
+					<p>four cases:</p>
+		            
+		            <ul>
+		            	
+		            	<li>Cross-discipline collaboration: Associate model outputs with Earth observations and
+reanalyses</li>
+
+						<li>Compare model outputs with Earth observations (EO)</li>
+						
+						<li>Streamlining Earth observations for ASR</li>
+						
+						<li>Enabling discovery of tropical cyclones (TC) by cataloging with CyberWay</li>
+		                
+		            </ul>
+		            
+		            <h3>System	of	Systems</h3>
+		            
+		            <p>CyberWay will integrate the capabilities and systems of primarily four existing EarthCube building
+blocks, i.e. BCube (a broker framework for geosciences)[23], [24], GeoWS (Geoscience Web
+Services)[25], CHORDS (EarthCube's Cloud-Hosted Real-time Data Services for the Geosciences)[26],
+and CyberConnector[27].</p>
+		            
+		            <p>
+						<a href="about.html#para4" th:href="@{about.html#para4}"><img class="img-responsive center-block" th:attr="src=@{../images/cyberway_overall_architecture.jpg}"/></a>
+					</p>
+					
+		        </div>
+		        
+		    </section>
+		
+		</div>
+	</body>
+</html>
