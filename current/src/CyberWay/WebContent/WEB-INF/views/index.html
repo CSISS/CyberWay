@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorator="frame">
+<head>
+    <title>Home</title>
+</head>
+<body>
+<div class="clearfix" layout:fragment="content">
+
+    <div class="page-header">
+        <div class="container">
+            <h1 class="headline">NSF EarthCube CyberWay</h1>
+
+            <h2 class="tagline">
+                Bridging the Earth Observations and Earth Science Modeling for Supporting Model Validation, Verification, and Inter-comparison
+            </h2>
+
+            <div class="text-center">
+                <a role="button" class="btn-white" href="demo" th:href="@{demo}">Online DEMO</a>
+                <br class="visible-xs-inline"/><br class="visible-xs-inline"/>
+                <a role="button" class="btn btn-lean" href="feature" th:href="@{feature}">More Features</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="sec-white font-default">
+        <div class="container">
+            <div class="col-xs-12 col-md-8">
+                <div class="panel panel-default">
+                    <p class="pull-right more"><a href="about" th:href="@{about}">MORE</a></p>
+                    <h2>What is CyberWay</h2>
+
+                    <p>This project developes an EarthCube building block, called
+                        CyberConnector, for facilitating the automatic preparation and
+                        feeding of both historic and near-real time Earth Observation
+                        customized data and on-demand derived products into Earth science
+                        models.</p>
+					
+
+                   
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <div class="panel panel-default panel-side">
+                    <h2>Principle Investigator</h2>
+
+                    <div class="pull-left"><img th:attr="src=@{../images/photo_ldi-s.png}"/></div>
+                    <dl class="side">
+                        <dt><a href="http://cloud.csiss.gmu.edu/ldi">Dr. Liping Di</a></dt>
+                        <dd><b>Professor, Director</b></dd>
+                        <dd>Center for Spatial Information Science &amp; Systems</dd>
+                        <dd>Email: <a href="mailto:ldi@gmu.edu">ldi@gmu.edu</a></dd>
+                    </dl>
+                </div>
+                <div class="panel panel-default panel-side">
+                    <h2>Co-Principle Investigators</h2>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec-lightgrey font-default">
+        <div class="container">
+            <div class="col-xs-12 col-md-8">
+                <div class="panel panel-default">
+                    <h2>Domains and exemplar ESMs</h2>
+
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <dl class="clearfix">
+                                <dt><a href="https://www.cmascenter.org/cmaq/" target="_blank">Community Multi-scale Air Quality Model</a></dt>
+                                <dd>&middot; open-source community-developed model for air &nbsp;&nbsp; quality simulations.</dd>
+                                <dd>&middot; estimates of ozone, particulates, toxics, acid, etc.</dd>
+                                <dd><img class="center-block" th:attr="src=@{../images/pic_mod_cmaq.png}"/></dd>
+                            </dl>
+                            <div class="seperator-line"/><br/>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <dl class="clearfix">
+                                <dt><a href="http://fvcom.smast.umassd.edu/fvcom/" target="_blank">Finite-Volume Coastal Ocean Model (FVCOM)</a></dt>
+                                <dd>&middot; a prognostic, unstructured-grid, finite-volume, free-surface, three-dimensional
+                                    primitive equation coastal ocean circulation model
+                                </dd>
+                                <dd><img class="center-block" th:attr="src=@{../images/pic_mod_fvcom.jpg}"/></dd>
+                            </dl>
+                            <div class="seperator-line"/><br/>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <dl class="clearfix">
+                                <dt><a>Cloud-Resolving Models (CRM)</a></dt>
+                                <dd>&middot; simulate the response of convection and clouds to the large-scale forcing</dd>
+                                <dd>&middot; resolve the cloud-scale dynamical circulations</dd>
+                                <dd>&middot; improving the process-level understanding of cloud-related processes and
+                                    their representation in general circulation models
+                                    (GCMs)
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <dl class="clearfix">
+                                <dt></dt>
+                                <dd><img class="center-block" th:attr="src=@{../images/pic_mod_century.png}"/></dd>
+                            </dl>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <div class="panel panel-default">
+                    <h2>Features</h2>
+                    <dl>
+                        <dt>Open Specifications</dt>
+                        <dd>- ISO/TC 211 standards</dd>
+                        <dd>- OGC specifications: CSW, WCS, WFS, WPS, SWE</dd>
+                    </dl>
+                    <dl>
+                        <dt>Open Architectures</dt>
+                        <dd>- Service-oriented architecture (SOA)</dd>
+                        <dd>- Representational State Transfer (REST)</dd>
+                        <dd>- Simple Object Access Protocol (SOAP)</dd>
+                    </dl>
+                    <dl>
+                        <dt>Service Composition</dt>
+                        <dd>- Business Process Execution Language (BPEL)</dd>
+                        <dd>- Business Process Model and Notation (BPMN)</dd>
+                    </dl>
+                    <dl>
+                        <dt>Interoperability</dt>
+                        <dd>- Support standard geospatial services</dd>
+                        <dd>- Plug-in-and-play Mode</dd>
+                        <dd>- Services free open access</dd>
+                    </dl>
+                    <dl>
+                        <dt>Reusability</dt>
+                        <dd>- Common service interfaces</dd>
+                        <dd>- Services easy to be reused</dd>
+                        <dd>- Service-chain-based geo-model processing</dd>
+                    </dl>
+                    <!--<dl>
+                        <dt>Scalability</dt>
+                        <dd>- Web-based modelservice-oriented architecture</dd>
+                        <dd>- Service easy to be reused</dd>
+                    </dl>-->
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+</body>
+</html>
