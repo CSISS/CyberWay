@@ -8,16 +8,17 @@
 
     <div class="page-header">
         <div class="container">
-            <h1 class="headline">NSF EarthCube CyberWay</h1>
+            <h1 class="headline">CyberWay</h1>
 
             <h2 class="tagline">
-                Bridging the Earth Observations and Earth Science Modeling for Supporting Model Validation, Verification, and Inter-comparison
+                Connecting Earth observations,
+polar science outcomes, and climate model outcomes via the EarthCube architecture
             </h2>
 
             <div class="text-center">
-                <a role="button" class="btn-white" href="demo" th:href="@{demo}">Online DEMO</a>
-                <br class="visible-xs-inline"/><br class="visible-xs-inline"/>
-                <a role="button" class="btn btn-lean" href="feature" th:href="@{feature}">More Features</a>
+                <!-- <a role="button" class="btn-white" href="demo" th:href="@{demo}">Online DEMO</a>
+                <br class="visible-xs-inline"/><br class="visible-xs-inline"/> -->
+                <a role="button" class="btn btn-lean"  th:href="@{about}">More Details</a>
             </div>
         </div>
     </div>
@@ -29,14 +30,19 @@
                     <p class="pull-right more"><a href="about" th:href="@{about}">MORE</a></p>
                     <h2>What is CyberWay</h2>
 
-                    <p>This project developes an EarthCube building block, called
-                        CyberConnector, for facilitating the automatic preparation and
-                        feeding of both historic and near-real time Earth Observation
-                        customized data and on-demand derived products into Earth science
-                        models.</p>
-					
+                    <p> This project will build a production system of systems integrating EarthCube building blocks,
+particularly BCube, CyberConnector, CHORDS, and GeoWS, to advance geosciences research through
+improved interoperability and integration across diverse polar science and atmospheric science research,
+methods, and resources. </p>
 
-                   
+					<p> Named CyberWay, the system is built through connecting Earth observations,
+polar science outcomes, and climate model outcomes via the EarthCube architecture. The system itself
+will also become an element of the EarthCube infrastructure.</p>
+
+					<p>
+						<a href="about.html#para4" th:href="@{about.html#para4}"><img class="img-responsive center-block" th:attr="src=@{../images/cyberway_overall_architecture.jpg}"/></a>
+					</p>
+					
                 </div>
             </div>
             <div class="col-xs-12 col-md-4">
@@ -47,12 +53,36 @@
                     <dl class="side">
                         <dt><a href="http://cloud.csiss.gmu.edu/ldi">Dr. Liping Di</a></dt>
                         <dd><b>Professor, Director</b></dd>
-                        <dd>Center for Spatial Information Science &amp; Systems</dd>
+                        <dd>Center for Spatial Information Science &amp; Systems of George Mason University</dd>
                         <dd>Email: <a href="mailto:ldi@gmu.edu">ldi@gmu.edu</a></dd>
                     </dl>
                 </div>
                 <div class="panel panel-default panel-side">
                     <h2>Co-Principle Investigators</h2>
+                    <dl class="clearfix">
+	                    <div class="pull-left"><img  style="width:90px;height:90px;" src="https://www.wallstreetotc.com/wp-content/uploads/2014/10/facebook-anonymous-app.jpg"/></div>
+	                    <dl class="side">
+	                        <dt><a href="http://cloud.csiss.gmu.edu/ldi">Dr. James Kinter</a></dt>
+	                        <dd>Center for Ocean-Land-Atmosphere Studies (COLA) of George Mason University</dd>
+	                        <dd>Email: <a href="mailto:ikinter@gmu.edu">ikinter@gmu.edu</a></dd>
+	                    </dl>
+                    </dl>
+                    <dl class="clearfix">
+	                    <div class="pull-left"><img  style="width:90px;height:90px;" src="https://www.wallstreetotc.com/wp-content/uploads/2014/10/facebook-anonymous-app.jpg"/></div>
+	                    <dl class="side">
+	                        <dt><a href="http://cloud.csiss.gmu.edu/ldi">Dr. David Bromwich</a></dt>
+	                        <dd>Byrd Polar and Climate Research Center of The Ohio State University</dd>
+	                        <dd>Email: <a href="mailto:bromwich@polarmet1.mps.ohio-state.edu">bromwich@polarmet1.mps.ohio-state.edu</a></dd>
+	                    </dl>
+                    </dl>
+                    <dl class="clearfix">
+	                    <div class="pull-left"><img  style="width:90px;height:90px;" src="https://www.wallstreetotc.com/wp-content/uploads/2014/10/facebook-anonymous-app.jpg"/></div>
+	                    <dl class="side">
+	                        <dt><a href="http://cloud.csiss.gmu.edu/ldi">Dr. Eugene Yu</a></dt>
+	                        <dd>Center for Spatial Information Science &amp; Systems of George Mason University</dd>
+	                        <dd>Email: <a href="mailto:gyu@gmu.edu">gyu@gmu.edu</a></dd>
+	                    </dl>
+                    </dl>
                     
                 </div>
             </div>
@@ -63,25 +93,34 @@
         <div class="container">
             <div class="col-xs-12 col-md-8">
                 <div class="panel panel-default">
-                    <h2>Domains and exemplar ESMs</h2>
+                    <h2>Scientific Use Cases</h2>
 
                     <div class="row">
                         <div class="col-xs-12 col-md-6">
                             <dl class="clearfix">
-                                <dt><a href="https://www.cmascenter.org/cmaq/" target="_blank">Community Multi-scale Air Quality Model</a></dt>
-                                <dd>&middot; open-source community-developed model for air &nbsp;&nbsp; quality simulations.</dd>
-                                <dd>&middot; estimates of ozone, particulates, toxics, acid, etc.</dd>
-                                <dd><img class="center-block" th:attr="src=@{../images/pic_mod_cmaq.png}"/></dd>
+                                <dt><a href="https://www.cmascenter.org/cmaq/" target="_blank">Integration of global and regional climate model outcomes for teleconnection studies across multiple disciplines</a></dt>
+                                <dd>&middot;Cross-discipline collaboration: Associate model outputs with Earth observations and
+reanalyses.</dd>
+                                <dd>&middot; Outputs from COLA models, Arctic regional models and reanalyses will be
+converted and made comparable through automatic composition of Web processing
+services to support on-demand re-projection, re-formatting, and/or re-scaling
+(temporally and spatially).</dd>
+								<dd>&middot; Association analyses, e.g. the connection of Arctic changes to mid-latitude and
+tropical (e.g. El Niño) climate dynamics in order to understand the role of warm air
+mass circulations over the Arctic, will be facilitated.</dd>
+                                <!-- <dd><img class="center-block" th:attr="src=@{../images/pic_mod_cmaq.png}"/></dd> -->
                             </dl>
                             <div class="seperator-line"/><br/>
                         </div>
                         <div class="col-xs-12 col-md-6">
                             <dl class="clearfix">
-                                <dt><a href="http://fvcom.smast.umassd.edu/fvcom/" target="_blank">Finite-Volume Coastal Ocean Model (FVCOM)</a></dt>
-                                <dd>&middot; a prognostic, unstructured-grid, finite-volume, free-surface, three-dimensional
-                                    primitive equation coastal ocean circulation model
-                                </dd>
-                                <dd><img class="center-block" th:attr="src=@{../images/pic_mod_fvcom.jpg}"/></dd>
+                                <dt><a href="http://fvcom.smast.umassd.edu/fvcom/" target="_blank">Inter-comparison and validation across models</a></dt>
+                                <dd>&middot; Direct comparison of high-resolution global model outputs with EO</dd>
+                                <dd>&middot; CyberWay will facilitate re-projection, re-formatting, and/or re-scaling (spatially
+and temporally) to make EO and model outputs comparable.</dd>
+								<dd>&middot; CyberWay allows the design and customization of workflows (both graphically and
+programmatically) and the automated execution of such workflows to make the
+comparison of model outputs and EO more efficient.</dd>
                             </dl>
                             <div class="seperator-line"/><br/>
                         </div>
@@ -90,19 +129,21 @@
                     <div class="row">
                         <div class="col-xs-12 col-md-6">
                             <dl class="clearfix">
-                                <dt><a>Cloud-Resolving Models (CRM)</a></dt>
-                                <dd>&middot; simulate the response of convection and clouds to the large-scale forcing</dd>
-                                <dd>&middot; resolve the cloud-scale dynamical circulations</dd>
-                                <dd>&middot; improving the process-level understanding of cloud-related processes and
-                                    their representation in general circulation models
-                                    (GCMs)
-                                </dd>
+                                <dt><a>Streamlined process for models</a></dt>
+                                <dd>&middot; A composite workflow of Web processing services to realize the discovery,
+retrieval, pre-processing, and post-publication for ASR.</dd>
+								<dd>&middot; The workflow execution is automated and controllable with self-timing clocks or
+triggers on data availability.</dd>
+								<dd>&middot; The metadata generation with quality metadata for the workflows is automated.</dd>
                             </dl>
                         </div>
                         <div class="col-xs-12 col-md-6">
                             <dl class="clearfix">
-                                <dt></dt>
-                                <dd><img class="center-block" th:attr="src=@{../images/pic_mod_century.png}"/></dd>
+                                <dt><a>Enhanced dissemination</a></dt>
+                                <dd>&middot; Crawl the tape archive and automate the workflow for metadata generation.</dd>
+                                <dd>&middot; Customized workflow for efficiently retrieving relevant data.</dd>
+                                <dd>&middot; Cache only variables about identified cyclones to reduce the dependency on slow
+mass storage systems.</dd>
                             </dl>
                         </div>
                     </div>
