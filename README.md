@@ -24,3 +24,5 @@ Michael D. Daniels (NCAR/EOL) : Chords
 Dr. Mohan Ramamurthy (Unidata): GeoWS
 
 Duration: 10/1/2017-9/30/2019
+
+Monthly Meeting: the second monday in each month
