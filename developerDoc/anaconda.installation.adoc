@@ -1,0 +1,93 @@
+== Installation
+
+Python/Python3 comes with Anaconda package.
+
+=== Check version
+
+Check current version of Python and conda:
+----
+conda --version
+python --version
+python3 --version
+----
+
+Check which Python are you using:
+----
+which python
+----
+
+
+=== Install Anaconda (Mac)
+----
+brew cask install anaconda
+----
+
+
+=== Install Anaconda (Ubuntu)
+Check the latest Anaconda distribution at: https://repo.continuum.io/archive/
+----
+wget https://repo.continuum.io/archive/Anaconda3-5.0.1-Linux-x86_64.sh
+sh Anaconda3-5.0.1-Linux-x86_64.sh
+----
+
+
+=== Set environment path
+Add the install location to Path:
+----
+nano /[user]/.bashrc
+----
+
+Prepend the following content:
+----
+# added by Anaconda3 installer
+export PATH="/[user]/local/anaconda3/bin:$PATH"
+----
+
+Add the install location to Path:
+----
+source /[user]/.bashrc
+----
+
+Verify the installation:
+----
+conda list
+----
+
+
+=== Updating Anaconda
+
+First update conda, then update anaconda:
+----
+conda update conda
+conda unpdate anaconda
+----
+
+
+=== Uninstalling Anaconda
+----
+conda instal anaconda-clean
+anaconda-clean
+rm -rf ~/anaconda3
+rm -rf /[user]/.anaconda_backup/
+----
+
+Add the install location to Path:
+----
+nano /[user]/.bashrc
+----
+
+Remove the following content:
+----
+# added by Anaconda3 installer
+export PATH="/[user]/local/anaconda3/bin:$PATH"
+----
+
+
+
+
+=== Reference:
+
+Anaconda installation: https://www.digitalocean.com/community/tutorials/how-to-install-the-anaconda-python-distribution-on-ubuntu-16-04
+
+Conda vs. Pip vs. Virtualenv:
+http://stuarteberg.github.io/conda-docs/_downloads/conda-pip-virtualenv-translator.html
