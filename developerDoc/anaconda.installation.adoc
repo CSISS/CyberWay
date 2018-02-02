@@ -1,8 +1,7 @@
-== Installation
+== Installing Python/Anaconda
 
-Python/Python3 comes with Anaconda package.
 
-=== Check version
+=== Check Version
 
 Check current version of Python and conda:
 ----
@@ -17,22 +16,17 @@ which python
 ----
 
 
-=== Install Anaconda (Mac)
-----
-brew cask install anaconda
-----
-
-
-=== Install Anaconda (Ubuntu)
+=== Install Anaconda
 Check the latest Anaconda distribution at: https://repo.continuum.io/archive/
 ----
 wget https://repo.continuum.io/archive/Anaconda3-5.0.1-Linux-x86_64.sh
 sh Anaconda3-5.0.1-Linux-x86_64.sh
 ----
+Please note that Python/Python3 comes with Anaconda package. It is not required to download/install an individual version of Python/Python3.
 
 
-=== Set environment path
-Add the install location to Path:
+=== Set Environment Path
+Add the install directory to the system environment path (ignore this step if the path has been set during installation):
 ----
 nano /[user]/.bashrc
 ----
@@ -43,7 +37,7 @@ Prepend the following content:
 export PATH="/[user]/local/anaconda3/bin:$PATH"
 ----
 
-Add the install location to Path:
+Reload the .bashrc:
 ----
 source /[user]/.bashrc
 ----
@@ -83,9 +77,7 @@ export PATH="/[user]/local/anaconda3/bin:$PATH"
 ----
 
 
-
-
-=== Reference:
+=== Reference
 
 Anaconda installation: https://www.digitalocean.com/community/tutorials/how-to-install-the-anaconda-python-distribution-on-ubuntu-16-04
 

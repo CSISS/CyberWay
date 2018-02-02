@@ -1,4 +1,4 @@
-== Caffe2 Installation
+== Install Caffe2
 
 === Set up Anaconda Environment
 ----
@@ -9,19 +9,7 @@ source activate py364_caffe2
 
 === Install Dependencies
 
-Add required system dependencies
-
-.On Mac:
-----
-brew install \
-    automake \
-    cmake \
-    git \
-    glog \
-    protobuf
-----
-
-.On Ubuntu:
+Add required system dependencies:
 ----
 sudo apt-get update
 sudo apt-get install -y --no-install-recommends \

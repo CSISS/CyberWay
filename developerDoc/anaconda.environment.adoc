@@ -1,6 +1,7 @@
+
 == Setting Up Anaconda Environment
 
-=== Create/Remove the environment
+=== Create/Remove Conda Environment
 
 List all Python versions:
 ----
@@ -50,7 +51,7 @@ The environment cannot be renamed but can be cloned:
 conda create --name new_name --clone old_name
 conda remove --name old_name --all
 ----
-The command redownloads packages, using --offline flag to disable it,
+The command re-downloads packages, using --offline flag to disable it.
 
 
 === Reference:
