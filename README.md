@@ -2,27 +2,38 @@
 
 This project is funded by NSF EarthCube. The aim is to connect Earth observations, polar science outcomes, and climate model outcomes via the EarthCube architecture.
 
-PI: Dr. Liping Di
+PI: 
 
-Co-I: James Kinter
+	Dr. Liping Di
 
-     David Bromwich
+Co-I: 
+
+	James Kinter
+
+    David Bromwich
 	 
-	 Eugene Yu
+	Eugene Yu
 	 
-Implementation Leader: Ziheng Sun
+Implementation Leader: 
+
+	Ziheng Sun
 
 Organization participation
 
-GMU CSISS, COLA
-OSU Byrd Center
-OMS, Inc (Steve Browdy): BCube
+	GMU CSISS, COLA
+
+	OSU Byrd Center
 
 Collaborators
 
-Michael D. Daniels (NCAR/EOL) : Chords
-Dr. Mohan Ramamurthy (Unidata): GeoWS
+	Michael D. Daniels (NCAR/EOL) : Chords
 
-Duration: 10/1/2017-9/30/2019
+	Dr. Mohan Ramamurthy (Unidata): GeoWS
 
-Monthly Meeting: the second monday in each month
+Duration: 
+
+	10/1/2017-9/30/2019
+
+Monthly Meeting: 
+
+	the second monday in each month
